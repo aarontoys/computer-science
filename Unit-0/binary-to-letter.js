@@ -45,4 +45,4 @@ function letterToBinary (letter) {
   console.log(num);
 }
 
-letterToBinary('A');
+letterToBinary('A'); // 1000001
