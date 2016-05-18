@@ -21,7 +21,15 @@ describe("Singly Linked List", function() {
     });
 
     it("stores the correct values", function() {
-      list.push(2).push(4)
+      // list.push(2).push(4)
+      // expect(list.pop()).to.equal(4);
+      // expect(list.length).to.equal(1);
+      // expect(list.pop()).to.equal(2);
+      // expect(list.length).to.equal(0);
+      list.push(2).push(4).push(6);
+      console.log('line30',list);
+      expect(list.pop()).to.equal(6);
+      expect(list.length).to.equal(2);
       expect(list.pop()).to.equal(4);
       expect(list.length).to.equal(1);
       expect(list.pop()).to.equal(2);
@@ -128,14 +136,14 @@ describe("Singly Linked List", function() {
   });
 
   describe("reverse", function(){
-    it("It should...", function(){
+    xit("It should...", function(){
 
     });
   });
 
 
   describe("reverseRecursive", function(){
-    it("It should...", function(){
+    xit("It should...", function(){
 
     });
   });

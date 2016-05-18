@@ -3,6 +3,7 @@ var Node = require('./node');
 var LinkedList = function (node) {
   this.head = node;
   this.tail = this.head;
+  this.length = 0;
 }
 
 LinkedList.prototype.insertHead = function(data) {
@@ -40,5 +41,12 @@ LinkedList.prototype.insertTail = function (data) {
     return this;
   }
 };
+
+LinkedList.prototype.testInsertTail = function (data) {
+  var node = new Node(data);
+  this.tail = node;
+  this.length++;
+  return this;
+}
 
 module.exports = LinkedList;
